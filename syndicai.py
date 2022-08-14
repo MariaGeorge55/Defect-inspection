@@ -16,7 +16,9 @@ class PythonPredictor:
     def __init__(self, config):
         """ Download pretrained model. """
         #self.model = torch.hub.load('MariaGeorge55/Defect-inspection', 'model_scripted_defect.pt', pretrained=True)#.autoshape()
-        self.model = torch.jit.load('https://github.com/MariaGeorge55/Defect-inspection/blob/main/model_scripted_defect.pt')#.autoshape()
+        #self.model = torch.jit.load('https://github.com/MariaGeorge55/Defect-inspection/blob/main/model_scripted_defect.pt')#.autoshape()
+
+        self.model = torch.jit.load('MariaGeorge55/Defect-inspection/model_scripted_defect.pt').autoshape()
 
     def predict(self, img):
         """ Run a model based on url input. """
