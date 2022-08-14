@@ -9,7 +9,6 @@ Original file is located at
 
 import torch
 from PIL import Image 
-from helpers import draw_box, url_to_img, img_to_bytes
 
 
 class PythonPredictor:
