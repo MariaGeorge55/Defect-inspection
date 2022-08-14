@@ -1,0 +1,16 @@
+opencv-python==4.2.0.34
+copy
+os
+time
+shutil 
+matplotlib
+numpy
+pandas
+torch
+torchvision
+PIL
+splitfolders
+json
+seaborn
+statistics
+collections
